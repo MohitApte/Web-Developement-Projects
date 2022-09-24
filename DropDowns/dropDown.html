@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Drop Down Menu</title>
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .clear{
+            clear: both;
+        }
+        #Menu ul{
+        list-style: none;
+        }
+        #Menu ul li {
+            float: left;
+           border: 0.5px grey solid;
+            background-color:green;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            width: 150px;
+            border-radius: 50px;
+            color: lightgray;
+            text-decoration: none;
+        }
+        #Menu ul li:hover{
+            color: white;
+            background-color: #09e21b;
+        }
+        #Menu ul ul{
+            display: none;
+        }
+        #Menu ul li:hover > ul{
+            display:block;
+        }
+      
+    </style>
+    <body>
+      <div id="Menu"> 
+         <ul>
+         <a href="">  <li>Home</li></a>
+            <a href=""><li>Contact Us</li></a>
+             <a href=""><li>About Us</li></a>
+             <li>The Drop Down
+             <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            </ul>
+             </li>
+         </ul>
+      </div>
+      <div class="clear"></div>
+    
+    </body>
+</html>

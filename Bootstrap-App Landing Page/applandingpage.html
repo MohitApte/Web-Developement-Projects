@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+      
+    <title>App Landing Page</title>
+      
+    <style type="text/css">
+      .navbar {
+	        font-size: 125%;
+       }
+      .navbar-brand {
+	         font-size: 125%;
+       }
+        #jumbotron{
+            text-align: center;
+            font-size: 350%;
+            background-image: url(background.jpg);
+            margin-top: 50px;
+        }
+        .card-img-top{
+               width: 100%;
+        }
+        #email{
+             width: 300px;
+        }
+        #signup{
+            margin-top: 20px;
+        }
+        .card {
+	              height: 500px;
+        }
+        #footer{
+            background-color: aqua;
+            text-align: center;
+            height: 700px;
+            margin-bottom: 0;
+            padding-top: 250px;
+          margin-top: 100px;
+          
+        }
+         #appStoreIcon {
+              
+              width: 200px;
+              
+          }
+        #big {
+        font-size: 250%;
+}
+        body {
+  position: relative;
+}
+    </style>
+  </head>
+  <body data-spy="scroll" data-target="#navbar" data-offset="150">
+      
+  
+    <nav class="navbar navbar-light bg-faded navbar-fixed-top">
+  <a class="navbar-brand" href="#">MyApp</a>
+        <div id="navbar">
+            <ul class="nav navbar-nav" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link" href="#jumbotron">Home<span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#about">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#footer">Download The App</a>
+    </li>
+   
+  </ul>
+            
+  <form class="form-inline pull-xs-right" id="form-top">
+         <div class="form-group row">
+                   <div class="col-sm-10">
+
+       <input class="form-control" type="email" placeholder="Email">
+      </div>
+      </div>
+ <div class="form-group row">
+           <div class="col-sm-10">
+
+
+        <input class="form-control" type="password" placeholder="Password">  
+      </div>
+      </div>
+ <div class="form-group row">
+           <div class="col-sm-10">
+
+     <button class="btn btn-success form-top" type="submit">Login</button>  
+      </div>
+      </div>
+      
+  </form></div>
+  
+</nav>
+      
+<div class="jumbotron" id="jumbotron">
+  <h1 class="display-3">My Awesome App!</h1>
+  <p class="lead">This is why YOU should download this fantastic app!</p>
+  <hr class="m-y-2">
+  <p>Want to know more? Join our mailing list!</p>
+  
+     <form class="form-inline">
+          <div class="form-group">
+            <label class="sr-only" for="email">Email address</label>
+         <div class="input-group">
+           <div class="input-group-addon">@</div>
+      <input class="form-control" type="email" id="email" placeholder="Email"> 
+         
+         </div>
+         </div>
+    <a class="btn btn-primary" id="signup" href="#" role="button">Sign Up</a>
+    </form>
+
+ 
+</div>
+              <div class="container">
+                  <div id="about">
+                  
+                  
+                  
+                  
+                    <h1 align="center">Why This App Is Awesome</h1>
+                    <p align="center">Summary, once again, of your app's awesomeness</p>
+
+                      <div class="row">
+                        <div class="col-sm-4">
+                           <div class="card">
+
+                              <img class="card-img-top" src="fatherandson.jpg" alt="Card image cap">
+                              <div class="card-block">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                
+                              </div>
+                            </div>
+                                  </div>
+                                <div class="col-sm-4">
+                                <div class="card">
+
+                              <img class="card-img-top" src="fatherandson.jpg" alt="Card image cap">
+                              <div class="card-block">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                              
+                              </div>
+                                    </div>
+                              </div>
+                                <div class="col-sm-4">
+                                <div class="card">
+
+                              <img class="card-img-top" src="fatherandson.jpg" alt="Card image cap">
+                              <div class="card-block">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                              
+                              </div>
+                                        </div>
+                          </div>
+                      </div>
+
+
+      </div>
+      </div>
+      <div class="jumbotron" id="footer">
+  <h2 class="display-3">Download the app!</h2>
+
+  <p id="big">Really, why should I download this app??</p>
+  <p class="lead">
+    <a href=""><img src="App-Store-Icon.png" id="appStoreIcon"></a>
+  </p>
+</div>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+      <script type="text/javascript">
+      $('body').scrollspy({ target: '#navbar' })
+      
+      </script>
+  </body>
+</html>

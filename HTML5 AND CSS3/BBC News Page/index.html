@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <style>
+        #top-bar{
+     width: 1000px;
+            margin: 0 auto;
+            height: 40px;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #logo{
+            margin-top: 8px;
+            width: 100px;
+            float: left;
+        }
+        .topbar-section{
+            float: left;
+           border-left: 1px #cccccc solid;
+            height: 100%;
+            position: relative;
+            left: 10px;
+        }
+        #sign-in-image{
+            width: 20px;
+            margin: 10px 25px;
+            float:left;
+         
+        }
+        #sign-in-text{
+            position: relative;
+            top: 13px;
+            left: -10px;
+            font-family:sans-serif;
+            float: left;
+        }
+        #wiggy{
+        position: relative;
+            left: 30px;
+            float: left;
+        }
+        #bell{
+            float: left;
+            position: relative;
+            left: 20px;
+            top: 5px;
+        }
+        #news{
+            float: left;
+            position: relative;
+            left: 50px;
+            padding-left: 10px;
+            font-family: sans-serif;
+        }
+        #sport{
+            float: left;
+            position: relative;
+            left: 60px;
+            padding-left: 10px;
+            font-family: sans-serif;
+        }
+        #weather{
+            float: left;
+            position: relative;
+            left: 70px;
+            padding-left: 10px;
+            font-family: sans-serif;
+        }
+        #iplayer{
+            float: left;
+            position: relative;
+            left: 80px;
+            padding-left: 10px;
+            font-family: sans-serif; 
+        }
+        #tv{
+             float: left;
+            position: relative;
+            left: 90px;
+            padding-left: 10px;
+            font-family: sans-serif; 
+        }
+             #more{
+             float: left;
+            position: relative;
+            left: 100px;
+            padding-left: 10px;
+            font-family: sans-serif; 
+        }
+        #more-arrow{
+            float: left;
+            position: relative;
+            left: 120px;
+            top: 20px;
+        }
+        #searchbar{
+            float: left;
+            position: relative;
+              left: 130px;
+            padding-left: 10px;
+            padding-top: 10px;
+       
+        }
+        #searchbutton{
+             float: left;
+            position: relative;
+            left: 130px;
+            top: 10px;
+        }
+        .clear{
+            clear: both;
+        }
+        #menu-bar-container{
+            background-color: #BB1919;
+            height: 70px;
+            width: 100%;
+        }
+        #menubar{
+             width: 1000px;
+            margin: 0 auto;
+            
+            
+        }
+        #news-menu{
+           color: white;
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+            font-size: 35px;
+            float: left;
+            position: relative;
+            top: 10px;
+
+        }
+        #local-news{
+           float: left;
+            text-decoration: none;
+            color: white;
+            font-family: sans-serif;
+            font-size: 35px;
+            position: relative;
+            left: 630px;
+            border: 1px #BB4545 solid;
+            top: 10px;
+            padding-right: 50px;
+        }
+         #local-news:hover{
+           float: left;
+            text-decoration: underline;
+            color: white;
+            font-family: sans-serif;
+            font-size: 35px;
+            position: relative;
+            left: 630px;
+            border: 1px #BB4545 solid;
+            top: 10px;
+            padding-right: 50px;
+        }
+        #pointer{
+            float: left;
+            position: relative;
+            left: 920px;
+            top: 7px;
+        }
+        
+        #menu-bar-2-container{
+            background-color: #A91717;
+            width: 100%;
+            height: 35px;
+        }
+        #menu-bar-2{
+            height: 35px;
+            margin: 0 auto;
+            width: 1000px;
+       
+        }
+        #menu-bar-2 a{
+         
+            text-decoration: none;
+            color: white;
+            padding: 0 10px;
+            border-right: 1px #BB4545 solid;
+        }
+            #menu-bar-2 a:hover {
+            text-decoration: underline;
+            color: white;
+            padding: 0 10px;
+            border-right: 1px #BB4545 solid;
+        }
+        #more{
+          text-decoration: none;
+            color: white;
+            position: relative;
+            left: 1090px;
+            top: -35px;
+        }
+          #more:hover{
+          text-decoration: underline;
+            color: white;
+            position: relative;
+            left: 1090px;
+            top: -35px;
+        }
+        #arrow{
+             position: relative;
+            left: 1100px;
+            top: -35px; 
+        }
+        #page-container{
+         width: 1000px;
+         margin: 0 auto;
+        }
+        
+        #title{
+            font-weight: normal;
+            font-size: 30px;
+            border-bottom: 2px #A91717 solid;
+            width: 140px;
+            margin-top: 20px;
+        }
+        h3 a{
+            text-decoration: none;
+            font-size: 30px;
+            color: black;
+        }
+          h3 a:hover{
+          
+            color: #3675B2;
+        }
+        #article-summary{
+            color: grey;
+            font-size: 20px;
+            width: 280px;
+            
+        }
+        #article-summary img{
+            height: 15px;
+            position: relative;
+            top: 2px;
+            float: left;
+        }
+        #article-summary a{
+            text-decoration: none;
+            color: #A91717;
+            border-left: 1px #CCCCCC solid;
+            position: relative;
+            left: 5px;
+            padding-left: 5px;
+        }
+        #article-summary a:hover{
+            color: #3675B2;
+        }
+        #news a{
+            text-decoration: none;
+            color: black;
+            position: relative;
+            left: -60px;
+        }
+        #news a:hover{
+            color: #3675B2;
+        }
+        #article{
+            float: left;
+            border-right:1px #CCCCCC solid;
+            padding-right: 50px;
+            height: 400px;
+        }
+        #ASDA{
+            position: relative;
+            left: 30px;
+            top: -200px;
+        }
+        #article-hr{
+          width: 15%;
+            border-color: #A91717;
+        }
+        #watch-listen{
+            margin-left: 20px;
+            width: 400px;
+        }
+        h4{
+            font-weight: normal;
+            font-size: 30px;
+        }
+        
+        .article-side-images{
+         width: 90px;
+        }
+        .watch-listen-link
+        {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+            position: relative;
+            top: -40px;
+        }
+        .watch-listen-link:hover{
+            color: #3675B2;
+        }
+      3675B2
+    </style>
+  </head>
+   <body>
+    <div id="top-bar">
+       <img id="logo" src="bbc-logo.png">
+      <div id="sign-in-div" class="topbar-section">
+        <img id="sign-in-image" src="signinimage.png" height="20px" width="20px">
+          <span id="sign-in-text"><strong>Sign in</strong></span>
+      </div>
+        <div id="wiggy">
+        <img src="wigglyline.png" height="40px">
+        </div>
+        <div id="bell">
+        <img id="bell" src="bell.png" width="25px" height="25px">
+        </div>
+        <div id="news" class="topbar-section">
+        <p><strong>News</strong></p>
+        </div>
+        <div id="sport" class="topbar-section">
+        <p><strong>Sport</strong></p>
+        </div>
+        <div id="weather" class="topbar-section">
+        <p><strong>Weather</strong></p>
+        </div>
+        <div id="iplayer" class="topbar-section">
+            <p><strong>iPlayer</strong></p>
+        </div>
+         <div id="tv" class="topbar-section">
+            <p><strong>TV</strong></p>
+        </div>
+         <div id="more" class="topbar-section">
+            <p><strong>More</strong></p> 
+        </div>
+        <div id="more-arrow">
+        <img src="more-arrow.png">
+        </div>
+        <div class="topbar-section" id="searchbar">
+        
+        <input type="text" value="Search">
+         
+        
+        </div>
+        <div id="searchbutton">
+       <input type="image" src="magnifying-glass.png" height="20px">
+        </div>
+    </div>
+       <div class="clear"></div>
+       <div id="menu-bar-container">
+       <div id="menubar">       
+           <h1 id="news-menu">NEWS</h1>
+           <div id="localnews">
+           <img src="pointer.png" id="pointer" height="50px">
+            <a href="" id="local-news">Find local news</a></div>
+          
+           
+        </div>
+     
+       </div>
+   <div id="menu-bar-2-container"> 
+         
+       
+       <div id="menu-bar-2">
+                <a href="">Home</a>
+               <a href="">Uk</a>
+              <a href="">World</a>
+             <a href="">Bussiness</a> 
+             <a href="">Politics</a>
+             <a href="">Tech</a>
+             <a href="">Science</a>
+             <a href="">Health</a>
+             <a href="">Education</a>
+             <a href="">Entertainment &amp; Arts</a>
+             <a href="">Video &amp; Audio</a>
+           </div>
+    
+        <a href="" id="more">More</a>
+       <img id="arrow" src="down-arrow.png" height="15px">       
+  
+     </div>
+     <div class="clear"></div>
+
+      <div id="page-container">
+          <div id="article-container">
+           <h2 id="title">Technology</h2>
+              <div id="article">
+              <h3 ><a href="">Asda bug exposed payment details</a></h3>
+                  
+              <div id="article-summary">
+                  <p>Security vulnerabilities that put customers at risk have affected Asda's website for a couple of years, a security expert has revealed.</p>
+                 <p><img src="clock.png">14 September 2016<a href="">Technology</a></p>
+                 <hr id="article-hr" align="left">
+              </div>
+              <div id="news">
+               <p><a href="">Surveillance firm hit in hack attack</a></p>
+                  <p><a href="">eBay flaw has existed for months</a></p>
+              </div>
+                   <img src="main-article-image.png" height="250px" id="ASDA">
+             </div>
+          </div>
+          <div class="clear"></div>
+          <div id="watch-listen">
+          <h4>Watch/Listen</h4>
+          <img class="article-side-images" src="article1-video.png">
+          <p><a href="" class="watch-listen-link">UK science chief backs blockchains</a></p>
+          <p><img src="clock.png">14 September 2016<a href=""></a></p>
+          
+          </div>
+          
+       </div>
+       
+    
+   </body>
+
+</html>
